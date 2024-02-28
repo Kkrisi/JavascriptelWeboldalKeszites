@@ -1,0 +1,8 @@
+#dives {
+    display: flex;
+    flex-direction: row;
+}
+#kep img {
+    width: 70%;
+    margin: 0px 15%;
+}
