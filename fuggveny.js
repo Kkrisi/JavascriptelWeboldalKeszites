@@ -46,3 +46,24 @@ export function OnalloFeladat(lista){
     }
     return txt
 }
+
+
+
+
+
+
+export function OsszArKiiars(lista){
+
+    var osszeg = 0;
+    var max = 0;
+    var txt=`<h3>A termék összára: ${osszeg}</h3>`
+    txt += "<p>"
+    for(let i = 0; i < lista.length ;i++){
+        osszeg += lista[i].ar;
+        if(lista[i].ar > max){
+            max = lista[i].tipus
+        }
+    }
+    txt += `</p>`
+    return txt
+}
